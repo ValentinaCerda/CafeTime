@@ -3,6 +3,9 @@ font-family: 'Allerta', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Allerta', sans-serif;
   margin: 0;
 }
@@ -58,8 +61,16 @@ input[type='checkbox']:checked:after {
 }
 
 .contenedor {
+  position: relative;
   width: 800px;
   margin: auto;
+}
+
+.background-general {
+  background: #3a2b29;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+  height: 85px;
+  color: white;
 }
 
 .titulo{
@@ -208,7 +219,7 @@ input[type='checkbox']:checked:after {
 .formulario {
   display: flex;
   color: white;
-  width: 400px;
+  width: 430px;
   /* padding-top: 50px;
   padding-right: 10px;
   padding-left: 10px;
@@ -244,4 +255,56 @@ input[type='checkbox']:checked:after {
 .generos {
   margin-top: 10px;
   font-size: 12px;
+}
+
+/*Tablas*/
+
+table {
+  width: 100%; /*toma el 100% de tu padre contenedor que tiene los 800px*/
+}
+
+th {
+  background: #3a2b29;
+  color: white;
+  padding: 10px 20px;
+}
+td {
+  padding: 20px;
+}
+
+table, td, th {
+  /* border: 1px solid #C29B61;
+  border-collapse: collapse; */
+  border: 0;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+i {
+  font-size: 13px;
+}
+
+.precio {
+  background: #9c540c;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px 7px;
+  border-radius: 50%;
+  width: 35px;
+}
+
+.titulo-precio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #3a2b29;
+  font-size: 45px;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.tabla {
+  margin: 50px 0px;
 }
